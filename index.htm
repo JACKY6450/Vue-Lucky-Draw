@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>抽獎APP</title>
+</head>
+<body>
+    <div id="app" class="app">
+        <div class="header">
+            抽獎APP
+        </div>
+        <div class="datablk">
+            <div class="switch">
+                <div class="switchitem" v-for = "(item,index) in showpg" 
+                 :class= "{pagechanged : index == theshow}" @click = "switchopen(index)" >
+                    {{ item }}
+                </div>
+            </div>
+            <div id="pg1" class="openpage" v-show = "theshow == 0">
+                <textarea name="" id="" class="viewerid" placeholder="請打開'抽獎人ID.txt'並貼上" 
+                          v-model= "idall" v-show = "currentstate.unopen">
+                </textarea>
+                <div class="countdownpage" v-show = "currentstate.opend">
+                    <h1>開獎倒數</h1>
+                    <div class="countdownball" >
+                        {{ countdown }}
+                    </div>
+                </div>
+                <div class="buttonarea">
+                    <input type="button" value="開獎囉" class="openbutton" 
+                     v-show = "currentstate.unopen" @click = "open()">
+                    <input type="button" value="清空名單" class="openbutton"
+                     v-show = "currentstate.unopen" @click = "clear()">
+                    <!-- <input type="button" value="重新抽獎" class="openbutton" 
+                     v-show = "currentstate.opend"@click = "relot()"> -->
+                </div>
+                
+            </div>
+            <div id="pg2" class="openpage" v-show = "theshow == 1">
+                <ul id="lastwin" class="winnerlist" >
+                    <li style="font-size: 24px; font-weight: bold;">中獎名單如下 : </li>
+                    <li v-for = "item in lastwinprize" style="margin: 5px 8px;">
+                        <b>{{ item.wonprize }} : </b>
+                        {{ item.winnerid }} 
+                    </li>
+                </ul>
+            </div>
+            <div id="pg3" class="openpage" v-show = "theshow == 2">
+                <div class="editor">
+                    <input type="text"  placeholder="獎品名稱" class="prizetext" v-model = "addprize.name">
+                    <input type="text"  placeholder="數量" class="prizetext"
+                     oninput="value=value.replace(/[^\d]/g,'')" v-model = "addprize.amount">
+                    <input type="button" value="送出" class="submit" @click = "prizeadd()">
+                </div>
+                <ul id="prizelist" class="winnerlist" >
+                    <li style="font-size: 24px; font-weight: bold;">獎品名稱一覽 : </li>
+                    <li v-for = "(item,index) in prizelist" style="margin: 5px 8px;" class="singlelist">
+                        <span class="listitem">
+                            {{ item.name }} X {{ item.amount }}
+                        </span>
+                        <span class="listitem1" @click = "modify(index)">修改</span>
+                        <span class="listitem1 listitem2" @click = "deleteitem(index)">刪除</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <!-- <script src="lib/vue.min.js"></script> -->
+    <script src="index.js"></script>
+</body>
+</html>
