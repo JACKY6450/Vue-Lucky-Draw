@@ -19,6 +19,6 @@ Json-Server db.json
 <br>
 port:3000
 <br><br>
-4.打開index.htm網頁開始操作
+4.打開index.htm啟用live-server開始操作
 ## 環境建置與需求
 * Node.js: v10.15.0
