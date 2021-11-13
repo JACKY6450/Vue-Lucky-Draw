@@ -23,11 +23,6 @@
   ],
   "prizelist": [
     {
-      "name": "PS5遊戲主機",
-      "amount": "2",
-      "id": 1
-    },
-    {
       "name": "周董演唱會門票",
       "amount": "2",
       "id": 15
@@ -56,68 +51,78 @@
       "name": "羅技G610機械式鍵盤",
       "amount": "1",
       "id": 20
+    },
+    {
+      "name": "PS5遊戲主機",
+      "amount": "3",
+      "id": 21
     }
   ],
   "lastwinprize": [
     {
-      "winnerid": "JARRETT",
-      "wonprize": "PS5遊戲主機",
-      "id": 1
-    },
-    {
-      "winnerid": "EVANGELINA",
-      "wonprize": "PS5遊戲主機",
-      "id": 2
-    },
-    {
-      "winnerid": "PATTIE",
+      "winnerid": "PHOENIX",
       "wonprize": "周董演唱會門票",
-      "id": 3
+      "id": 16
     },
     {
-      "winnerid": "DWIGHT",
+      "winnerid": "CHRISTIANNE",
       "wonprize": "周董演唱會門票",
-      "id": 4
+      "id": 17
     },
     {
-      "winnerid": "JENSEN",
+      "winnerid": "BRIELLA",
       "wonprize": "任天堂Switch",
-      "id": 5
+      "id": 18
     },
     {
-      "winnerid": "SILAS",
+      "winnerid": "VANESSA",
       "wonprize": "任天堂Switch",
-      "id": 6
+      "id": 19
     },
     {
-      "winnerid": "FINLEY",
+      "winnerid": "SHARLEEN",
       "wonprize": "DYSON吸塵器",
-      "id": 7
+      "id": 20
     },
     {
-      "winnerid": "JARRED",
+      "winnerid": "HEAVEN",
       "wonprize": "雷蛇電競滑鼠",
-      "id": 8
+      "id": 21
     },
     {
-      "winnerid": "CARLY",
+      "winnerid": "MONTGOMERY",
       "wonprize": "雷蛇電競滑鼠",
-      "id": 9
+      "id": 22
     },
     {
-      "winnerid": "ASHER",
+      "winnerid": "MARGARETTA",
       "wonprize": "雷蛇電競耳機",
-      "id": 10
+      "id": 23
     },
     {
-      "winnerid": "MAKAYLA",
+      "winnerid": "CHRISTOBEL",
       "wonprize": "雷蛇電競耳機",
-      "id": 11
+      "id": 24
     },
     {
-      "winnerid": "PAULIE",
+      "winnerid": "DAUL",
       "wonprize": "羅技G610機械式鍵盤",
-      "id": 12
+      "id": 25
+    },
+    {
+      "winnerid": "DARRELL",
+      "wonprize": "PS5遊戲主機",
+      "id": 26
+    },
+    {
+      "winnerid": "DARLENE",
+      "wonprize": "PS5遊戲主機",
+      "id": 27
+    },
+    {
+      "winnerid": "ADALINE",
+      "wonprize": "PS5遊戲主機",
+      "id": 28
     }
   ]
 }
